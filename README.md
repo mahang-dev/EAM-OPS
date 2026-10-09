@@ -4,6 +4,12 @@
 
 验收状态：18 项后端测试通过；完整浏览器闭环和容器运行验收尚未全部完成，具体见 [测试报告](docs/test-report.md)。
 
+<img width="1920" height="960" alt="PixPin_2026-10-09_12-33-30" src="https://github.com/user-attachments/assets/81443c1b-ac5f-4d0f-857d-37b306efd318" />
+<img width="1920" height="960" alt="PixPin_2026-10-09_12-29-35" src="https://github.com/user-attachments/assets/5816fbe4-a713-45ce-adcc-38252a298e54" />
+<img width="1920" height="960" alt="PixPin_2026-10-09_12-33-01" src="https://github.com/user-attachments/assets/7e1447d5-b3ce-4bc9-a08b-bb68eb7185c5" />
+<img width="1920" height="960" alt="PixPin_2026-10-09_12-33-15" src="https://github.com/user-attachments/assets/70241469-55d8-4a29-8676-8bda7c3f5c17" />
+
+
 ## 当前本机运行
 
 项目内已准备便携 Java 17、Maven、MySQL 和 Redis，保存在被 Git 忽略的 `.tools`；数据与日志在 `.runtime`，不安装 Windows 服务。
