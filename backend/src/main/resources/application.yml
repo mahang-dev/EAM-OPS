@@ -1,0 +1,38 @@
+server:
+  port: ${PORT:8080}
+spring:
+  application:
+    name: eam-ops
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:3306/eam_ops?useUnicode=true&characterEncoding=utf8&connectionTimeZone=Asia/Shanghai}
+    username: ${DB_USER:eam}
+    password: ${DB_PASSWORD}
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      password: ${REDIS_PASSWORD:}
+      timeout: 2s
+  jackson:
+    time-zone: Asia/Shanghai
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: when_authorized
+app:
+  jwt-secret: ${JWT_SECRET}
+  demo-password: ${DEMO_PASSWORD:}
+  bootstrap-password: ${BOOTSTRAP_PASSWORD:}
+  scheduling: ${SCHEDULING_ENABLED:true}
+logging:
+  structured:
+    format:
+      console: logstash
